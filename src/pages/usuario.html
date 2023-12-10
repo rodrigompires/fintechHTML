@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telas Fintech">
+    <meta name="keywords" content="HTML, Tailwind/CSS, JavaScript">
+    <meta name="author" content="Rodrigo Pires">
+    <link href="../../dist/output.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script defer src="../js/usuario.js"></script>
+
+    <title>Tela Usuário</title>
+</head>
+<body>
+    <main class="userContainer w-full min-h-screen m-auto flex items-center flex-col py-12 px-8">
+        <header>
+            <img src="../../dist/images/screen_1/Logo_Fintech.svg" alt="Logo Fintech">
+            <nav>
+                <ul class="hidden">
+                    <li>home<img src="../../dist/images/screen_4/Icone_Home.svg" alt="Icone home"></li>
+                    <li>avisos<img src="../../dist/images/screen_4/Icone_Avisos.svg" alt="Icone sino"></li>
+                    <li>finanças<img src="../../dist/images/screen_4/Icone.Financas.svg" alt="Icone moeda"></li>
+                    <li>ajuda<img src="../../dist/images/screen_4/Icone_Ajuda.svg" alt="Icone caixa com sinal de interrogação"></li>
+                    <li>mais<img src="../../dist/images/screen_4/Icone_Menu.svg" alt="Icone menu hamburguer"></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="w-full flex items-center justify-between mt-8 ">
+            <div>
+                <h1 class="text-xl text-cinza-color-header-register font-roboto">Olá, <span class="uppercase" id="userNameSpan"></span></h1>
+                <p class="text-[.6rem] text-cinza-color-header-register font-roboto">Ag: 0000 | C/C 10000-0</p>
+            </div>
+            <div>
+                <img src="../../dist/images/screen_2/theodoro.svg" alt="Imagem do meu cachorro" class="theo">
+            </div>
+        </section>
+
+        <section class="w-full flex items-start flex-col mt-[1.5rem] max-w-[30rem]">
+            <div class="flex items-center justify-center gap-4">
+                <p class="text-md text-cinza-color-header-register font-roboto">R$ 50.000,00</p>
+                <img src="../../dist/images/screen_4/Icone_Senha.svg" alt="Icone de um olho com cadeado">
+            </div>
+            <p class="text-[.6rem] text-cinza-color-header-register font-roboto">Seu saldo</p>
+        </section>
+
+        <section class="w-full mt-32 max-w-[30rem]">
+            <div class="flex items-center justify-around">
+                <div class="flex flex-col items-center justify-center w-24 h-16 rounded-md border border-transparent bg-cinza-bg-widgets">
+                    <img src="../../dist/images/screen_4/Icone_Extrato.svg" alt="Icone extrato">
+                    <p class="text-[.6rem] text-cinza-color-header-register mt-[.5rem]">Extrato</p>
+                </div>
+                <div class="flex flex-col items-center justify-center w-24 h-16 rounded-md border border-transparent bg-cinza-bg-widgets">
+                    <img src="../../dist/images/screen_4/Icone_Transferir.svg" alt="Icone transferir">
+                    <p class="text-[.6rem] text-cinza-color-header-register mt-[.5rem]">Transferir</p>
+                </div>
+                <div id="cardWidget" class="flex flex-col items-center justify-center w-24 h-16 rounded-md border border-amarelo-bg-button bg-cinza-bg-widgets cursor-pointer">
+                    <img src="../../dist/images/screen_4/Icone_Cartoes.svg" alt="Icone cartão">
+                    <p class="text-[.6rem] text-cinza-color-header-register mt-[.5rem]">Cartões</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-around mt-8">
+                <div class="flex flex-col items-center justify-center w-[9rem] h-16 rounded-md border border-transparent bg-cinza-bg-widgets">
+                    <img src="../../dist/images/screen_4/Icone_Restaurantes.svg" alt="Icone restaurante">
+                    <p class="text-[.6rem] text-cinza-color-header-register mt-[.5rem]">Restaurantes</p>
+                </div>
+                <div class="flex flex-col items-center justify-center w-[9rem] h-16 rounded-md border border-transparent bg-cinza-bg-widgets">
+                    <img src="../../dist/images/screen_4/Icone_Mercados.svg" alt="Icone mercado">
+                    <p class="text-[.6rem] text-cinza-color-header-register mt-[.5rem]">Mercados</p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="w-full h-16 absolute bottom-0 py-4 px-8 bg-cinza-bg-widgets">
+            <nav>
+                <ul class="flex items-center justify-between">
+                    <li class="userLi flex flex-col justify-center items-center w-16 relative text-[.8rem] text-cinza-color-header-register hover:text-amarelo-bg-outline"><img src="../../dist/images/screen_4/Icone_Home.svg" alt="Icone home">home</li>
+                    <li class="userLi flex flex-col justify-center items-center w-16 relative text-[.8rem] text-cinza-color-header-register hover:text-amarelo-bg-outline"><img src="../../dist/images/screen_4/Icone_Avisos.svg" alt="Icone sino">avisos</li>
+                    <li class="userLi flex flex-col justify-center items-center w-16 relative text-[.8rem] text-cinza-color-header-register hover:text-amarelo-bg-outline"><img src="../../dist/images/screen_4/Icone.Financas.svg" alt="Icone moeda">finanças</li>
+                    <li class="userLi flex flex-col justify-center items-center w-16 relative text-[.8rem] text-cinza-color-header-register hover:text-amarelo-bg-outline"><img src="../../dist/images/screen_4/Icone_Ajuda.svg" alt="Icone caixa com sinal de interrogação">ajuda</li>
+                    <li class="userLi flex flex-col justify-center items-center w-16 relative text-[.8rem] text-cinza-color-header-register hover:text-amarelo-bg-outline"><img src="../../dist/images/screen_4/Icone_Menu.svg" alt="Icone menu hamburguer">mais</li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+</body>
+</html>

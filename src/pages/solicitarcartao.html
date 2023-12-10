@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telas Fintech">
+    <meta name="keywords" content="HTML, Tailwind/CSS, JavaScript">
+    <meta name="author" content="Rodrigo Pires">
+    <link href="../../dist/output.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script defer src="../js/solicitarcartao.js"></script>
+
+    <title>Tela Solicitar Cartões</title>
+</head>
+<body>
+    <main class="requestCardsContainer w-full min-h-screen m-auto flex items-center flex-col py-12 px-8">
+        <header class="w-full flex flex-col items-start justify-center">
+            <h1 class="text-cinza-color-header-register text-2xl">Escolha o seu Cartão</h1>
+            <p class="flex items-center text-cinza-color-header-register">cartão de débito e crédito <img src="../../dist/images/screen_5/Logo_Fintech.svg" alt=""></p>
+        </header>
+
+        <section class="mt-12">
+            <div class="relative">
+                <img src="../../dist/images/screen_5/Cartao_1.svg" alt="Figura de um cartão de crédito">
+                <div class="absolute top-20 left-20 w-40 transform rotate-[-8deg]">
+                    <p class="userNameRequestCard uppercase font-dosis text-xs font-semibold text-[#B7A7A7]"></p>
+                </div>
+            </div>
+            <div class="relative mt-10">
+                <img src="../../dist/images/screen_5/Cartao_2.svg" alt="Figura de um cartão de crédito">
+                <div class="absolute top-[4.8rem] left-16 transform rotate-[8deg]">
+                    <p class="userNameRequestCard uppercase font-dosis text-xs font-semibold text-[#B7A7A7]"></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-full flex items-center justify-center mt-20">
+            <div>
+                <input type="button" value="SOLICITAR" class="w-32 h-8 text-amarelo-color-button-register font-nunito text-sm uppercase font-semibold rounded-[5px] bg-gradient-to-b from-amber-500 to-amber-400 border border-transparent outline-none transition-all duration-300 hover:border hover:border-amarelo-bg-button hover:bg-gradient-to-b hover:from-cinza-bg-button-register hover:to-cinza-bg-button-register-2 hover:text-amarelo-bg-after_2 hover:cursor-pointer">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

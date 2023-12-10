@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telas Fintech">
+    <meta name="keywords" content="HTML, Tailwind/CSS, JavaScript">
+    <meta name="author" content="Rodrigo Pires">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="./src/css/styles.css" rel="stylesheet">
+    <script defer src="./src/js/scripts.js"></script>
+
+    <title>Telas Fintech</title>
+</head>
+<body class="w-screen h-screen m-auto transition-all duration-500 ease">
+    <main class="mainContainer w-screen min-h-screen m-auto flex flex-col items-center py-12 px-8">
+        <header class="w-full xl:w-[80%] flex justify-between items-center">
+            <div class="w-full xl:w-48">
+                <img src="./dist/images/screen_1/Logo_Fintech.svg" alt="Logotipo Fintech E-Benefits" class="w-48 mx-auto">
+            </div>
+            <nav class="hidden xl:block">
+                <ul class="list-none flex gap-8">
+                    <li class="xl:cursor-pointer text-cinza-color_li p-[.5rem] relative after:content-[''] after:w-0 after:h-[2px] after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-500 after:ease-in-out after:bg-gradient-to-b from-amarelo-bg-after_1 to-amarelo-bg-after_2 after:hover:w-full">quem somos</li>
+                    <li class="xl:cursor-pointer text-cinza-color_li p-[.5rem] relative after:content-[''] after:w-0 after:h-[2px] after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-500 after:ease-in-out after:bg-gradient-to-b from-amarelo-bg-after_1 to-amarelo-bg-after_2 after:hover:w-full">fale conosco</li>
+                    <li class="xl:cursor-pointer text-cinza-color_li p-[.5rem] relative after:content-[''] after:w-0 after:h-[2px] after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-500 after:ease-in-out after:bg-gradient-to-b from-amarelo-bg-after_1 to-amarelo-bg-after_2 after:hover:w-full">valores</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="w-full grid grid-cols-1 mt-12 transition duration-300 ease-in-out sm:w-[60%] lg:w-[50%] xl:grid xl:grid-cols-2 xl:w-[70%] xl:gap-8">
+            <div class="xl:w-[80%]">
+                <h1 class="text-white font-medium text-center text-2xl font-nunito">entre</h1>
+                <form id="user" name="user" method='post' class="flex flex-col w-full">
+                    <div class="relative mt-6">
+                        <label for="name" class="block mb-1 font-nunito text-cinza-color-label text-xs font-medium">nome</label>
+                        <input type="text" name="name" id="name" placeholder="nome cadastrado" class="teste w-full pl-2.5 h-10 bg-white text-cinza-color-input font-dosis font-medium text-xs rounded-[5px] border-2 border-transparent outline-2 outline-transparent cursor-pointer outline hover:outline-2 hover:outline-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition duration-200 ease-in-out">
+                        <div id="iconName">
+                            <img src="./dist/images/screen_1/Icone_Nome.svg" alt="Icone representando uma pessoa" class="absolute top-[55%] right-5 flex items-center">
+                        </div>
+                    </div>
+                    <p class="text-[#f31] text-[.6rem] hidden">erro</p>
+                    <div class="relative mt-6">
+                        <label for="homePassword" class="block mb-1 font-nunito text-cinza-color-label text-xs font-medium">senha</label>
+                        <input type="text" name="homePassword" id="homePassword" placeholder="digite a sua senha" class="w-full pl-2.5 h-10 bg-white text-cinza-color-input font-dosis font-medium text-xs rounded-[5px] border-2 border-transparent outline-2 outline-transparent cursor-pointer outline hover:outline-2 hover:outline-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition duration-200 ease-in-out">
+                        <div id="iconHomePassword">
+                            <img src="./dist/images/screen_1/Icone_Senha.svg" alt="Icone representando uma pessoa" class="absolute top-[55%] right-5 flex items-center">
+                        </div>
+                    </div>
+                    <p class="text-[#f31] text-[.6rem] hidden">erro</p>
+                </form>
+                <div class="w-full flex items-center justify-between mt-4">
+                    <div class="flex items-center gap-[3px]">
+                        <input type="checkbox" name="check" id="check" class="w-3 h-3 rounded-[3px] cursor-pointer border-none outline-none">
+                        <label for="check" class="ml-[3px] text-xs font-medium text-amarelo-bg-button cursor-pointer font-dosis">lembrar</label>
+                    </div>
+                    <p class="font-roboto text-[10px] italic underline text-cinza-color-recover cursor-pointer">Recuperar senha</p>
+                </div>
+                <div class="w-full flex items-center justify-between mt-12">
+                    <div>
+                       <input type="button" value="entrar" id="buttonEnter" disabled onclick="login()" class="disabled:bg-cinza-color-input disabled:text-cinza-color_li w-20 h-8 bg-cinza-color-enter-button rounded-sm border-none outline-none font-nunito text-xs font-medium cursor-pointer">
+                    </div>
+                    <div>
+                        <input type="button" value="cadastre-se" onclick="register()" class="w-32 h-8 text-amarelo-color-button-register font-nunito text-sm uppercase font-semibold rounded-[5px] bg-gradient-to-b from-amber-500 to-amber-400 border border-transparent outline-none transition-all duration-300 hover:border hover:border-amarelo-bg-button hover:bg-gradient-to-b hover:from-cinza-bg-button-register hover:to-cinza-bg-button-register-2 hover:text-amarelo-bg-after_2 hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="w-full flex flex-col mt-32 xl:mt-44">
+                    <input type="button" value="faça login com o Google" class="buttonGoogle w-full h-8 outline-none border border-transparent rounded-[3px] font-roboto text-[10px] font-semibold pl-10 transition-all duration-300 bg-white text-cinza-color-button-google hover:border hover:border-amarelo-bg-after_2">
+                    <input type="button" value="faça login com o Facebook" class="buttonFacebook w-full h-8 outline-none border border-transparent rounded-[3px] font-roboto text-[10px] font-semibold pl-10 transition-all duration-300 bg-cinza-color-button-facebook text-white my-5 hover:border hover:border-amarelo-bg-after_2">
+                    <input type="button" value="faça login com o Apple" class="buttonApple w-full h-8 outline-none border border-transparent rounded-[3px] font-roboto text-[10px] font-semibold pl-10 transition-all duration-300 bg-black text-cinza-color-text-button-apple bg-no-repeat bg-[30px] hover:border hover:border-amarelo-bg-after_2">
+                </div>
+            </div>
+            <div class="xl:flex xl:items-center xl:justify-center">
+                <img src="./dist/images/screen_1/Speech_to_text_pana.svg" alt="Figura de um smartphone" class="imgSmartphone hidden xl:block xl:w-[80%] xl:m-auto">
+            </div>
+        </section>
+        <footer class="hidden xl:block xl:mt-12 xl:text-cinza-color-enter-button">
+            <p><a href="https://br.freepik.com/vetores-gratis/ilustracao-do-conceito-de-discurso-para-texto_11121754.htm#query=smartphone&position=28&from_view=search&track=sph&uuid=8e151c07-a5d0-427d-afaa-075b289847d6">Imagem de storyset</a> no Freepik</p>
+        </footer>
+    </main>
+</body>
+</html>

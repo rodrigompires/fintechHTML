@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telas Fintech">
+    <meta name="keywords" content="HTML, Tailwind/CSS, JavaScript">
+    <meta name="author" content="Rodrigo Pires">
+    <link href="../../../dist/output.css" rel="stylesheet">
+    <link href="../../src/css/styles.css" rel="stylesheet">
+    <script defer src="../js/cadastro.js"></script>
+    <title>Tela Cadastro</title>
+</head>
+<body>
+    <main class="containerRegister w-full min-h-screen m-auto flex items-center flex-col py-12 px-8">
+        <header class="w-full flex justify-between items-center font-nunito text-cinza-color-header-register sm:w-[80%]">
+            <div>
+                <h1 class="text-2xl">Crie sua conta</h1>
+                <p class="text-xs">preencha seus dados</p>
+            </div>
+            <div class="w-10 h-10 rounded-full border border-amarelo-bg-button cursor-pointer relative overflow-hidden">
+                <label for="foto" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">foto</label>
+                <input type="file" name="foto" id="foto" class="absolute top-[50%] translate-y-[-50%] left-0 w-10 cursor-pointer opacity-0 ">
+            </div>
+        </header>
+
+        <section class="w-full grid grid-cols-1 mt-12 transition duration-300 ease-in-out xl:grid xl:grid-cols-2 xl:w-[80%] xl:m-auto xl:gap-8">
+            <div class="w-full flex flex-col sm:w-[80%] sm:m-auto lg:w-[60%]">
+                <form action="" class="w-full h-80 rounded-[10px] pt-[6px] px-[11px] pb-[8px] mt-4 bg-cinza-bg-form">
+                    
+                    <div class="grid grid-cols-[30%_60%] items-center justify-between gap-4">
+                        <div class="relative">
+                            <label for="firstName" class="text-cinza-color-input font-medium font-nunito text-xs">nome</label></br>
+                            <input type="text" name="firstName" id="firstName" placeholder="nome" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out">
+                            <div class="absolute top-[55%] right-5 flex items-center opacity-100 transition-all duration-400 ease-in-out" id="iconFirstName">
+                                <img src="../../dist/images/screen_2/Icone_Nome.svg" alt="Icone representando uma pessoa" class="w-5 h-5">
+                            </div>
+                            <p id="textFirstName" class="absolute text-[.6rem] text-[#f31] opacity-100 transition-all duration-400 ease-in-out">obrigatório</p>
+                        </div>
+                        <div class="relative">
+                            <label for="lastName" class="text-cinza-color-input font-medium font-nunito text-xs">sobrenome</label></br>
+                            <input type="text" name="lastName" id="lastName" placeholder="sobrenome" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out">
+                            <div class="absolute top-[55%] right-5 flex items-center opacity-100 transition-all duration-400 ease-in-out" id="iconLastName">
+                                <img src="../../dist/images/screen_2/Icone_Nome.svg" alt="Icone representando uma pessoa" class="w-5 h-5">
+                            </div>
+                            <p id="textLastName" class="absolute text-[.6rem] text-[#f31] opacity-100 transition-all duration-400 ease-in-out">obrigatório</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-[30%_30%_30%] items-center justify-between mt-4">
+                        <div>
+                            <label class="text-cinza-color-input font-medium font-nunito text-xs" for="cpf">cpf</label></br>
+                            <input placeholder="000.000.000-00" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out" type="text" name="cpf" id="cpf">
+                        </div>
+                        <div>
+                            <label class="text-cinza-color-input font-medium font-nunito text-xs" for="celular">celular</label></br>
+                            <input placeholder="(11) 99999-9999" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out" type="text" name="celular" id="celular">
+                        </div>
+                        <div>
+                            <label class="text-cinza-color-input font-medium font-nunito text-xs" for="other">outro contato</label></br>
+                            <input placeholder="(11) 99999-9999" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out" type="text" name="other" id="other">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-[60%_30%] items-center justify-between gap-2 mt-4">
+                        <div class="relative">
+                            <label for="email" class="text-cinza-color-input font-medium font-nunito text-xs">email</label></br>
+                            <input type="email" name="email" id="email" placeholder="email@exemplo.com" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out">
+                            <div class="absolute top-[55%] right-5 flex items-center opacity-100 transition-all duration-400 ease-in-out" id="iconEmail">
+                                <img src="../../dist/images/screen_2/Icone_Email.svg" alt="Icone representando uma pessoa" class="w-5 h-5">
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <label for="date" class="text-cinza-color-input font-medium font-nunito text-xs">data</label></br>
+                            <input type="date" name="date" id="date" placeholder="nome" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-[45%_45%] items-center justify-between gap-2 mt-4">
+                        <div class="relative">
+                            <label for="password" class="text-cinza-color-input font-medium font-nunito text-xs">senha</label></br>
+                            <input type="password" name="password" id="password" placeholder="Exemplo@*123" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out">
+                            <div class="absolute top-[55%] right-5 flex items-center opacity-100 transition-all duration-400 ease-in-out" id="iconPassword">
+                                <img src="../../dist/images/screen_2/Icone_Senha.svg" alt="Icone representando uma pessoa" class="w-5 h-5">
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <label for="cPassword" class="text-cinza-color-input font-medium font-nunito text-xs">confirme sua senha</label></br>
+                            <input type="password" name="cPassword" id="cPassword" placeholder="Exemplo@*123" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out">
+                            <div class="absolute top-[55%] right-5 flex items-center opacity-100 transition-all duration-400 ease-in-out" id="iconCPassword">
+                                <img src="../../dist/images/screen_2/Icone_Senha.svg" alt="Icone representando uma pessoa" class="w-5 h-5">
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                </form>
+
+                <section class="w-full rounded-[10px] bg-cinza-bg-form mt-4 flex items-center pt-[6px] px-[11px] pb-[8px]">
+                    <div class="w-full grid grid-cols-[15%_75%] items-center justify-between gap-1">
+                        <div class="relative">
+                            <label for="estado" class="text-cinza-color-input font-medium font-nunito text-xs">UF</label></br>
+                            <select name="estado" id="estado" class="h-8 rounded-sm bg-white font-dosis text-xs font-semibold text-cinza-color-input cursor-pointer " >
+                            </select>
+                        </div>
+                        <div class="relative">
+                            <label for="cidade" class="text-cinza-color-input font-medium font-nunito text-xs">escolha sua cidade</label></br>
+                            <select name="cidade" id="cidade" class="w-full h-8 rounded-sm font-dosis text-xs font-medium bg-white text-cinza-color-input pl-[9px] cursor-pointer border-2 border-transparent outline-2 outline-transparent hover:border-2 hover:border-amarelo-bg-outline focus:outline-2 focus:outline-amarelo-bg-outline transition-all duration-500 ease-in-out" >
+                            </select> 
+                        </div>
+                </section>
+
+                <section class="w-full h-24 mt-8 flex items-center">
+                    <div class="w-full flex items-center justify-between">
+                        <div>
+                           <input type="button" value="cancelar" onclick="backHome()" class="w-20 h-7 bg-[#D68484] rounded-sm font-nunito text-xs font-medium border-none outline-none cursor-pointer transition-all duration-500 ease-in-out">
+                        </div>
+                        <div>
+                            <input type="button" value="SALVAR" disabled id="saveButton" onclick="goCards()" class="disabled:bg-gradient-to-b disabled:from-cinza-color-input disabled:to-cinza-color-recover disabled:text-white w-32 h-7 text-amarelo-color-button-register font-nunito text-sm font-semibold rounded-sm border border-transparent outline-none cursor-pointer bg-gradient-to-b from-amber-500 to-amber-400 transition duration-300">
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="hidden xl:block xl:w-[80%] xl:m-auto">
+                <img src="../../dist/images/screen_2/Editing body text-pana.svg" alt="Desenho de uma mulher sentada em mesa de escritório">
+            </div>
+        </section>
+
+        <footer class="hidden xl:block text-white">
+            <p><a href="https://br.freepik.com/vetores-gratis/editando-a-ilustracao-do-conceito-do-corpo-do-texto_13549587.htm#query=notebook&position=18&from_view=search&track=sph&uuid=5c91d5ba-ec82-4925-a531-fb64da51a00b">Imagem de storyset</a> no Freepik</p>
+        </footer>
+    </main>
+</body>
+</html>

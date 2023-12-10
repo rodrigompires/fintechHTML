@@ -1,0 +1,112 @@
+.mainContainer {
+    background-image: url(../../dist/images/screen_1/Background_screen_1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.buttonGoogle {
+    background-image: url(../../dist/images/screen_1/Logo_Google.svg);
+    background-repeat: no-repeat;
+    background-position: 30px;
+}
+
+.buttonFacebook {
+    background-image: url(../../dist/images/screen_1/Logo_Facebook.svg);
+    background-repeat: no-repeat;
+    background-position: 30px;
+}
+
+.buttonApple {
+    background-image: url(../../dist/images/screen_1/Logo_Apple.svg);
+    background-repeat: no-repeat;
+    background-position: 30px;
+}
+
+
+.imgSmartphone {
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* PAGINA CADASTRO */
+
+.containerRegister {
+    background-image: url(../../dist/images/screen_2/Background_Cadastro.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.iconHidden {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.hide {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+
+
+
+/* PAGINA USUARIO */
+
+.userContainer {
+    background-image: url(../../dist/images/screen_4/background.svg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.userLi:hover,
+.userLi:focus {
+    filter: invert(57%) sepia(82%) saturate(591%) hue-rotate(2deg) brightness(105%) contrast(94%);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+/* CADASTRO CARTÕES */
+
+.containerRegisterCards {
+    background-image: url(../../dist/images/screen_2/Background_Cadastro.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showCard {
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+
+
+
+/* SOLICITAR CARTOES */
+
+.requestCardsContainer {
+    background-image: url(../../dist/images/screen_5/Background.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
